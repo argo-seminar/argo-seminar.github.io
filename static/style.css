@@ -1,29 +1,45 @@
 table {
     width: 70%;
-    border:1px solid blue;
+    border: 1px solid blue;
     margin-left: auto;
     margin-right: auto;
 }
 
-th, td {
-    border:1px solid black;
-    padding: 3pt; 
+th,
+td {
+    border: 1px solid black;
+    padding: 3pt;
 }
 
-h1,h2 {
-    text-align:center;
+h1,
+h2 {
+    text-align: center;
 }
+
+.toggle:hover {
+    color: purple;
+}
+
+.content {
+    color: grey;
+    font-style: italic;
+
+}
+
 .container {
     padding: 0 20px;
     text-align: center;
 }
+
 .text-center {
     text-align: center;
 }
+
 .italic {
     font-style: italic;
 }
-.columnHeader{
+
+.columnHeader {
     text-align: center;
-    border:1px solid blue;
+    border: 1px solid blue;
 }

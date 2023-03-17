@@ -32,8 +32,27 @@ function buildTable(jsonList) {
     const topicCell = row.insertCell();
     const dateCell = row.insertCell();
     speakerCell.innerHTML = json.Speaker;
-    topicCell.innerHTML = json.Topic;
+    //topicCell.innerHTML = json.Topic;
     dateCell.innerHTML = json.Date;
+
+    // make clicable topic
+    const title = document.createElement('div');
+    const abstract = document.createElement('div');
+    title.innerHTML = json.Title
+    abstract.innerHTML = json.Abstract
+    topicCell.appendChild(title)
+    topicCell.appendChild(abstract)
+    title.classList.add("toggle")
+    abstract.classList.add("content")
+    abstract.style.display = "none"
+    title.onclick = function () {
+      console.log("hi")
+      if (abstract.style.display === "none") {
+        abstract.style.display = "inline";
+      } else {
+        abstract.style.display = "none";
+      }
+    }
   }
 
   // Return the generated HTML table
