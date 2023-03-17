@@ -243,24 +243,24 @@
     "Speaker": "Jean Feydy",
     "Title": "Fast geometric libraries for vision and data sciences",
     "Date": "09/02/2023",
-    "Abstract": ""
+    "Abstract": "From 3D point clouds to high-dimensional samples, sparse representations have a key position in the data science toolbox. They complement 2D images and 3D volumes effectively, enabling fast geometric computations for e.g. Gaussian processes and shape analysis. In this talk, I will present extensions for PyTorch, NumPy, Matlab and R that speed up fundamental computations on (generalized) point clouds by several orders of magnitude, when compared to PyTorch or JAX GPU baselines. These software tools allow researchers to break through major computational bottlenecks in the field and have been downloaded more than 400k times over the last few years. "
   },
   {
     "Speaker": "Elisabetta Cornacchia",
     "Title": "Learning with Neural Networks: Generalisation, Complexity and Boolean Measures",
     "Date": "13/02/2023",
-    "Abstract": "Enter abstract 3 (in json)"
+    "Abstract": "In this talk, I will consider the learning of logical functions with gradient descent (GD) on neural networks. I will introduce the notion of ``Initial Alignment’’ (INAL) between a neural network at initialization and a target function and show that if a network and target do not have a noticeable INAL, then noisy gradient descent on a fully connected network with i.i.d. initialization cannot learn in polynomial time. Moreover, I will show that on symmetric neural networks, the generalization error can be lower-bounded in terms of the noise-stability of the target function, supporting a conjecture made in prior works. I will further explain how a curriculum learning strategy allows to learn efficiently certain functions (namely dense parities) that are provably hard in the standard setting with no curriculum. If time permits, I will show that in the distribution shift setting, when the data withholding corresponds to freezing a single feature, the generalisation error admits a tight characterisation in terms of the Boolean influence for several relevant architectures. In particular, this puts forward the hypothesis that for such architectures and for learning logical functions, GD tends to have an implicit bias towards low-degree representations."
   },
   {
     "Speaker": "Rémi Flamary",
     "Title": "Optimal transport for graph modeling with applications",
     "Date": "20/02/2023",
-    "Abstract": "Enter abstract 2 (in json)"
+    "Abstract": "In recent years the Optimal Transport (OT) based Gromov-Wasserstein (GW) divergence has been investigated as a similarity measure between structured data expressed as distributions typically lying in different metric spaces, such as graphs with arbitrary sizes. In this talk, we will address the optimization problem inherent in the computation of GW and some of its recent extensions, namely the Entropic and the Fused GW divergences. Next we will illustrate how these OT problems can be used to model graph data in learning scenarios such as graph compression, clustering and classification. Finally we will present two recent applications of those OT distances, the first one as a way to align between brains of  fMRI subjects and a second application as a novel pooling layer in Graph Neural Networks"
   },
   {
     "Speaker": "Mathieu",
     "Title": "Implicit regularisation, large stepsizes and edge of stability for (S)GD over diagonal linear networks",
     "Date": "27/02/2023",
-    "Abstract": "Enter abstract 1 (in json)"
+    "Abstract": "(description coming)"
   }
 ]
