@@ -11,18 +11,21 @@ async function readJSONFile(file) {
 function buildTable(jsonList) {
   // Create a new HTML table element
   const table = document.createElement('table');
+  table.classList.add("table")
+  table.classList.add("table-bordered")
+  table.classList.add("table-striped")
 
   // Create a header row with column names
   const headerRow = table.insertRow();
-  const speakerHeader = headerRow.insertCell();
-  const topicHeader = headerRow.insertCell();
-  const dateHeader = headerRow.insertCell();
+  const speakerHeader = document.createElement("th")
+  const topicHeader = document.createElement("th")
+  const dateHeader = document.createElement("th")
+  headerRow.append(speakerHeader)
+  headerRow.append(topicHeader)
+  headerRow.append(dateHeader)
   speakerHeader.innerHTML = "Speaker";
   topicHeader.innerHTML = "Topic";
   dateHeader.innerHTML = "Date";
-  speakerHeader.classList.add("columnHeader")
-  topicHeader.classList.add("columnHeader")
-  dateHeader.classList.add("columnHeader")
 
   // Add a row for each JSON object
   for (let i = 0; i < jsonList.length; i++) {
@@ -30,7 +33,8 @@ function buildTable(jsonList) {
     const row = table.insertRow();
     const speakerCell = row.insertCell();
     const topicCell = row.insertCell();
-    const dateCell = row.insertCell();
+    dateCell = document.createElement("th")
+    row.append(dateCell)
     speakerCell.innerHTML = json.Speaker;
     //topicCell.innerHTML = json.Topic;
     dateCell.innerHTML = json.Date;
@@ -58,7 +62,7 @@ function buildTable(jsonList) {
 }
 
 
-// Will be used to create a div per person
+// Will be used to create a div per person We could add office in the card
 function createDivPerson(json) {
   let divPerson = document.createElement("div");
   divPerson.className = "person-div";
