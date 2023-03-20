@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Ana Busic",
+        "pic_url": "https://www.di.ens.fr/~busic/img/Busic.jpg",
+        "position": "head of team",
+        "interests": "RL"
+    },
+    {
+        "name": "Ana Busic",
+        "pic_url": "https://www.di.ens.fr/~busic/img/Busic.jpg",
+        "position": "head of team",
+        "interests": "RL"
+    },
+    {
+        "name": "Laurent Massoulié",
+        "pic_url": "https://www.di.ens.fr/laurent.massoulie/picture_LM_27_09_2021.jpg",
+        "position": "permanent researcher",
+        "interests": "distributed learning"
+    },
+    {
+        "name": "Laurent Massoulié",
+        "pic_url": "https://www.di.ens.fr/laurent.massoulie/picture_LM_27_09_2021.jpg",
+        "position": "permanent researcher",
+        "interests": "distributed learning"
+    }
+]

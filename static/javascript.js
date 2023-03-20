@@ -1,7 +1,7 @@
 //document.getElementById("main_table").innerHTML+="HELLOOOOO"
 
-async function readJSONFile() {
-  const response = await fetch('./data.json');
+async function readJSONFile(file) {
+  const response = await fetch(file);
   const jsonList = await response.json();
   return jsonList;
 }
@@ -46,7 +46,6 @@ function buildTable(jsonList) {
     abstract.classList.add("content")
     abstract.style.display = "none"
     title.onclick = function () {
-      console.log("hi")
       if (abstract.style.display === "none") {
         abstract.style.display = "inline";
       } else {
@@ -54,15 +53,35 @@ function buildTable(jsonList) {
       }
     }
   }
-
   // Return the generated HTML table
   return table;
 }
 
 
-readJSONFile().then((jsonList) => {
-  const table = buildTable(jsonList.reverse());
-  document.getElementById("main_table").appendChild(table);
-}).catch((error) => {
-  console.error(error);
-});
+// Will be used to create a div per person
+function createDivPerson(json) {
+  let divPerson = document.createElement("div");
+  divPerson.className = "person-div";
+
+  let name = document.createElement("h1");
+  name.className = "person-name";
+  name.innerHTML = json.name;
+  divPerson.appendChild(name);
+
+  let position = document.createElement("h2");
+  position.className = "person-position";
+  position.innerHTML = json.position;
+  divPerson.appendChild(position);
+
+  let pic = document.createElement("img");
+  pic.className = "person-pic";
+  pic.src = json.pic_url;
+  divPerson.appendChild(pic);
+
+  let interests = document.createElement("p");
+  interests.className = "person-interests";
+  interests.innerHTML = "Interests: " + json.interests;
+  divPerson.appendChild(interests);
+
+  return divPerson;
+}
