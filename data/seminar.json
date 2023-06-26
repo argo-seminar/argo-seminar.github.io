@@ -265,8 +265,20 @@
   },
   {
     "Speaker": "Vianney Perchet",
-    "Title": "Forthcoming",
+    "Title": "Learning learning-augmented algorithms",
     "Date": "22/05/2023",
-    "Abstract": "(Forthcoming abstract)"
+    "Abstract": "In this talk, I will argue that it is sometimes possible to learn, with techniques originated from bandits, the hints on which learning-augmented algorithms rely to improve worst-case performances. We will describe this phenomenon, the combination of online learning with competitive analysis, on the example of stochastic online scheduling. We shall quantify the merits of this approach by computing and comparing non-asymptotic expected competitive ratios (the standard performance measure of algorithms)."
+  },
+  {
+    "Speaker": "Simon Coste",
+    "Title": "Efficient Training of Energy-Based Models Using Jarzinsky Equality",
+    "Date": "09/06/2023",
+    "Abstract": "Energy-Based models (EBMs) are generative models inspired by statistical physics with a wide range of applications in unsupervised learning. Their performance is best measured by the cross-entropy (CE) of the model distribution relative to the data distribution. Using the CE as the objective for training is however challenging because the computation of its gradient with respect to the model parameters requires sampling the model distribution. Here we show how results for nonequilibrium thermodynamics based on Jarzynski equality together with tools from sequential Monte-Carlo sampling can be used to perform this computation efficiently and avoid the uncontrolled approximations made using the standard contrastive divergence algorithm. Specifically, we introduce a modification of the unadjusted Langevin algorithm (ULA) in which each walker acquires a weight that enables the estimation of the gradient of the cross-entropy at any step during GD, thereby bypassing sampling biases induced by slow mixing of ULA. We illustrate these results with numerical experiments on Gaussian mixture distributions as well1 as the MNIST dataset. We show that the proposed approach outperforms methods based on the contrastive divergence algorithm in all the considered situations."
+  },
+  {
+    "Speaker": "Sean Meyn",
+    "Title": "Stochastic Approximation and Machine Learning",
+    "Date": "15/06/2023",
+    "Abstract": "This lecture aims to explain why stochastic approximation emerges everywhere in our world of algorithms, and why these algorithms typically fail.  Fortunately, there are five rules you can apply to ensure success. An active participant at Inria seminars may recognize that these rules are at odds with what is proposed in recent literature, such as application of non-vanishing step-size for acceleration. Necessary and sufficient conditions are given under which this alternative point of view is valid, but we find that the sufficient conditions rarely hold in applications to reinforcement learning."
   }
 ]
